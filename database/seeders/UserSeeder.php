@@ -16,14 +16,15 @@ class UserSeeder extends Seeder
     public function run()
     {   
 
-        /*
-            Uncomment this code to create admin admin account
-        */
-        // User::create([
-        //     "name" => 'Jhon Doe',
-        //     "email" => 'your_admin_email',
-        //     "password" => Hash::make('youradminpassword')
-        // ]);
-
+        User::create([
+            "name" => 'Leonardo Tapia',
+            "email" => 'admin@yourdomain.ltd',
+            'phone_local' => "+581111234567",
+            'phone_movil' => "",
+            'address' => "Catacombs",
+            'super_admin' => true,
+            'can_login' => true,
+            "password" => Hash::make('youradminpassword')
+        ]);
     }
 }
